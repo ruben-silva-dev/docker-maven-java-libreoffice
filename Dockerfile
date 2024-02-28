@@ -5,7 +5,7 @@ FROM maven:3.9.5-amazoncorretto-17
 RUN apt-get update
 
 # Instala o LibreOffice
-RUN apt-get install -y libreoffice
+RUN apt-get install -y libreoffice=24.2.0
 
 # Define o diretório de trabalho
 WORKDIR /app
