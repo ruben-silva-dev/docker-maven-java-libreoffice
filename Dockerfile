@@ -10,7 +10,4 @@ RUN yum update -y && \
     yum localinstall RPMS/*.rpm -y && \
     rm -rf /LibreOffice_*
 
-RUN export PATH="$PATH:/opt/libreoffice7.6/program"
-
-# Define o diretório de trabalho
-WORKDIR /app
+RUN mv /usr/bin/libreoffice7.6 /usr/bin/libreoffice
